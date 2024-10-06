@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.container-fluid {
+  padding: 1rem;
+}
+
+hr {
+  border: none;
+  margin: 1rem 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .navbar-list .list-item .nav-link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navbar .right-div {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .right-div .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar .right-div .icons .fab,
+.navbar .right-div .icons .fas {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navbar .right-div .btn-dark {
+  border: 1px solid white;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+header .middle-logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 9rem;
+}
+
+header .middle-logo-div img {
+  width: 10rem;
+}
+
+header .middle-logo-div p {
+  font-size: 1.3rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* welcome section */
+.welcome-section .img-col {
+  max-width: 70%;
+}
+
+.welcome-section .img-col img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.welcome-section .right-section {
+  padding-top: 2.5rem;
+  max-width: 35%;
+}
+
+.welcome-section .right-section h1 {
+  font-weight: 500;
+  font-size: 1.69rem;
+}
+
+.welcome-section .right-section h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.welcome-section .right-section p {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  padding: 3rem 0;
+  margin: 0;
+}
+
+.welcome-section .right-section .bottom,
+.post-card .card-body .bottom {
+  display: flex;
+  gap: 1rem;
+}
+
+.welcome-section .right-section .bottom img,
+.post-card .card-body .bottom img {
+  width: 50px;
+  height: 50px;
+}
+
+.welcome-section .right-section .bottom .meta-info,
+.post-card .card-body .bottom .meta-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.welcome-section .right-section .bottom h4,
+.post-card .card-body .bottom h4 {
+  margin-bottom: 0;
+}
+
+.welcome-section .right-section .bottom p,
+.post-card .card-body .bottom p {
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+/* post card */
+.post-card .col {
+  max-width: 400px;
+  height: 100%;
+}
+
+.post-card .card-img-top img {
+  width: 100%;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.post-card .card-body {
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.post-card .card-body h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.post-card .card-body .post-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem 0;
+}
+
+.post-card .card-body .post-text {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 1.5rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.post-card .post-card-col {
+  max-width: 49%;
+  height: 100%;
+}
